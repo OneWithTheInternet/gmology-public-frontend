@@ -1,0 +1,200 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.footer {
+  @include mixins.appEnclosure;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  color: darken(variables.$bgColor1, 30%);
+  padding: variables.$mainSectionsPadding;
+
+  & h4 {
+    color: variables.$bgColor2;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  &__imageContainer {
+    max-width: 5rem;
+    min-width: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+  }
+}
+
+.footer .footer__support {
+  width: 100%;
+
+  &__text {
+    color: darken(variables.$bgColor1, 30%);
+  }
+
+  &__links {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+
+    &__patreon {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      margin-right: 1rem;
+
+      & .iconPatreon {
+        color: darken(variables.$bgColor1, 30%);
+        font-size: 2rem;
+      }
+
+      &__text a {
+        color: variables.$bgColor2;
+
+        & input {
+          font-weight: bold;
+          border-radius: 1rem;
+        }
+      }
+    }
+
+    &__paypal {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+
+      & .iconPaypal {
+        color: darken(variables.$bgColor1, 30%);
+        font-size: 2rem;
+      }
+
+      & img {
+        display: none;
+      }
+
+      &__text {
+        color: variables.$bgColor2;
+      }
+
+      & form {
+        margin: 0.5rem 0rem;
+      }
+
+      & .donateButton input {
+        border: none;
+        padding: 0rem;
+        margin: 0rem;
+        height: inherit;
+        max-width: 4rem;
+      }
+    }
+  }
+}
+
+.footer__contact {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+
+  & a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+  & p {
+    margin: 0.2rem 0rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__email {
+    margin-bottom: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    & .iconEnvelope {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__twitter {
+    margin-bottom: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    & .iconTwitter {
+      color: darken(variables.$bgColor1, 30%);
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__github {
+    margin-bottom: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    & .iconGithub {
+      color: darken(variables.$bgColor1, 30%);
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.footer__blog {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+
+  & a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+  & p {
+    margin: 0.2rem 0rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__wordpress {
+    margin-bottom: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    & .iconWordpress {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.footer__credits {
+  margin: 1.5rem 0rem;
+
+  &__twitch {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    & .iconTwitch {
+      color: darken(variables.$bgColor1, 30%);
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    &__IGDBIcon {
+      width: 3rem;
+    }
+  }
+}

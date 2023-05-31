@@ -1,0 +1,113 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+.searchBar {
+    @include mixins.appEnclosure;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content: center;
+    padding: variables.$mainSectionsPadding;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.9rem;
+    background-color: variables.$bgColor2;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    &__input {
+        flex-grow: 1;
+
+        & input {
+            // text-indent: 1.8rem;
+            @include mixins.basicInputField;
+            height: 50px;
+            margin: 0rem;
+            padding: 0px, 15px;
+        }
+
+        & input:focus {
+            border: solid 1px variables.$bgColor3;
+        }
+
+    }
+
+    &__searchIcon {
+        @include mixins.searchBarIcons;
+        right: 0rem;
+        cursor: pointer;
+    }
+    
+    &__xmark {
+        @include mixins.searchBarIcons;
+        left: 0rem;
+        cursor: pointer;
+    }
+
+    & .errorMessage {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.searchBar .loader {
+    position: absolute;
+    top: 3.2rem;
+    z-index: 1;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    @include mixins.colorBoxShadow;
+    border-radius: 0.5rem;
+}
+
+.searchPreview {
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    @include mixins.colorBoxShadow;
+    border-radius: 0.5rem;
+
+    &__filter {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0.5rem 0rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        border: solid 1px grey;
+    }
+
+    & .gameListCard {
+        @include mixins.listOfResources;
+
+    }
+
+    & .userListCard {
+        @include mixins.listOfResources;
+
+    }
+    
+    &__seeAllButton  {
+        margin: 1rem 0rem;
+        width: 100%;
+        text-decoration: underline;
+    }
+}

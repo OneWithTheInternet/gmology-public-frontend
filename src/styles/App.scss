@@ -1,0 +1,105 @@
+//basics
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+@use "./base/typography";
+@use "./base/forms";
+@use "./base/images";
+@use "./components/buttons";
+@use "./components/dividers";
+// pages
+@use "./pages/createPost";
+@use "./pages/login";
+@use "./pages/post";
+@use "./pages/accountSettings";
+@use "./pages/accountDeletion";
+@use "./pages/feedback";
+@use "./pages/singup";
+@use "./pages/search";
+@use "./pages/game";
+@use "./pages/homepage";
+@use "./pages/user";
+@use "./pages/giveaway";
+//Layout
+@use "./layout/header";
+@use "./layout/postCard";
+@use "./layout/comment";
+@use "./layout/searchBar";
+@use "./layout/pageContent";
+@use "./layout/listOfUsers";
+@use "./layout/referenceCollections";
+@use "./layout/footer";
+//components
+@use "./components/commentsCounter";
+@use "./components/confirmationMessage";
+@use "./components/errorMessage";
+@use "./components/loadMoreButton.scss";
+@use "./components/imageNotAvailable";
+@use "./components/smallRoundAvatar";
+
+body {
+  background-color: variables.$bgColor2;
+  min-width: 320px;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  & a {
+    text-decoration: none;
+    text-decoration: underline;
+  }
+
+  .resultsCounter {
+    color: lighten(variables.$text-color, 50%);
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+
+  .headerContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .searchBarContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 4.1rem;
+  }
+
+  .pageContentContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    min-height: 20rem;
+
+    section {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 5px;
+      background-color: variables.$bgColor1;
+      padding: variables.$mainSectionsPadding;
+      border-radius: 5px;
+    }
+  }
+
+  .sectionsContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .footerContainer {
+    background-color: variables.$bgColor--dark;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}

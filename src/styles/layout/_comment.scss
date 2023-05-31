@@ -1,0 +1,8 @@
+@use '../abstracts/variables';
+
+.comment {
+    padding: 10px;
+    margin: variables.$lineMargins;
+    margin-bottom: 15px;
+    border-left: solid lightgray 4px;
+}

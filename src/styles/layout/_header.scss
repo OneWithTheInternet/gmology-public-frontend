@@ -1,0 +1,98 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.header {
+    @include mixins.appEnclosure;
+    padding: 0rem 1.2rem 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 0.1rem;
+
+    & .logoContainer {
+        width: 12%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    & .searchIcon {
+        flex-grow: 1;
+        margin: 0px 10px;
+
+        & div {
+            width: 30px;
+        }
+    }
+}
+
+.userMenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: center;
+    
+    .userImageContainer {
+        cursor: pointer;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-content: center;
+        width: 1.9rem;
+        height: 1.9rem;
+        margin-right: 0.8rem;
+        
+        & img {
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    z-index: 2;
+
+    .userTag__userContainer__nameContainer {
+        color: grey;
+    }
+
+    & .dropdown__menuIconContainer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    &__closeIcon {
+        cursor: pointer;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 2;
+    }
+
+    &__menu {
+        min-width: 75%;
+        position: fixed;
+        background-color: variables.$bgColor1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        right: 0rem;
+        top: 0rem;
+        padding: 15px 20px;
+        margin-top: 0px;
+        list-style-type: none;
+        min-height: 100vh;
+
+        & li {
+            margin: 0.5rem  0rem;
+            width: 100%;
+        }
+
+        //selecting the user's name and removing underline
+        & :nth-child(1) {
+            text-decoration: none;
+        }
+    }
+}

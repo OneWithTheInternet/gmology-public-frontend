@@ -1,0 +1,141 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.pageContent .game {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+
+
+}
+
+.game .mainInfo {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-top: 1rem;
+    
+    &__imageContainer, .imageNotAvailable {
+        min-height: 13rem;
+        margin: auto;
+        padding: 0rem 0.6rem;
+        min-width: 10rem;
+        max-width: 16rem;
+        
+        & img {
+            border-radius: 0.5rem;
+        }
+    }
+    
+    &__summary {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        padding: 0rem 0.6rem;
+        align-items: center;
+
+        &__releaseDate {
+            margin-top: 0.5rem;
+            & p {
+                padding: 0.4rem;
+                display: inline-block;
+                background-color: lighten(variables.$text-color, 30%);
+                color: variables.$bgColor1;
+                border-radius: 0.5rem;
+            }
+        }
+        
+        &__title {
+            & h2 {
+                margin: 0rem;
+                text-align: center;
+                @include mixins.truncate;
+            }
+        }
+
+
+        &__stats {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+}
+
+.mainInfo__summary__stats_top1Count {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 1rem;
+    align-items: center;
+    
+    & .topOneIcon {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        width: 2rem;
+        margin-right: 0.2rem;
+    }
+
+    & img {
+        object-fit: contain;
+    }
+}
+
+.mainInfo__summary__stats_playCount {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 1rem;
+    align-items: center;
+    width: 1.7rem;
+
+    & .playedCountIcon {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        width: 1.3rem;
+        margin-right: 0.2rem;
+    }
+
+    & img {
+        object-fit: contain;
+    }
+}
+
+.game_buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+
+    & .buttonAddPlayed, .buttonRemovePlayed, .topSelector select, .isTopButton input  {
+        min-width: 14rem;
+    }
+
+    & .buttonRemovePlayed form input, .isTopButton input {
+        @include mixins.checkedButton;
+        border: none;
+    }
+
+    & .topSelector select {
+        @include mixins.basicInputField;
+        background-color: variables.$bgColor1;
+        text-align: center;
+    }
+}
+
+.game_otherInfo {
+    display: flex;
+    flex-flow: column nowrap;
+    & p {        
+        margin: 0.8rem 0rem;
+    }
+}
+
+.game_otherInfo {
+    &__summary {
+        @include mixins.truncate;
+        -webkit-line-clamp: 10; /* number of lines to be shown in trucation */
+    }
+}

@@ -1,0 +1,534 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.user {
+  hr {
+    @include mixins.dottedLine;
+  }
+}
+
+.user .mainInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0rem 1rem 0.5rem 1rem;
+
+  > :nth-child(1) {
+    margin-top: 0.3rem;
+  }
+
+  > :nth-child(2) {
+    margin-top: 1rem;
+  }
+
+  &__options {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
+
+  &__user {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 0;
+    width: 100%;
+  }
+}
+
+.user .notice {
+  @include mixins.notice;
+}
+
+.mainInfo__user__head {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &__avatar {
+    min-width: 4rem;
+    max-width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+
+    img {
+      border-radius: 15rem;
+    }
+  }
+
+  & p {
+    margin: 0.3rem 0rem;
+  }
+
+  &__overview {
+    display: flex;
+    flex-flow: column nowrap;
+
+    & p {
+      margin: 0.3rem 0rem;
+    }
+
+    &__name {
+      margin: 0rem 0rem 0.3rem 0rem;
+      @include mixins.truncate;
+      -webkit-line-clamp: 1; /* number of lines to be shown while truncating */
+
+      h1 {
+        margin: 0rem;
+      }
+    }
+
+    &__stats {
+      display: flex;
+      flex-flow: row nowrap;
+
+      & > div {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}
+
+.mainInfo__user .buttonUserWatch {
+  min-width: 7rem;
+  max-width: 7rem;
+
+  & input {
+    height: 2.5rem;
+  }
+
+  &--watching input {
+    @include mixins.checkedButton;
+    background-color: variables.$highlightColor--2;
+  }
+}
+
+.mainInfo__user .mainInfo__user__bio {
+  p {
+    color: lighten(variables.$text-color, 40%);
+  }
+}
+
+.user .topGames {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-top: 1rem;
+  min-height: 11rem;
+  margin-bottom: 1rem;
+
+  &__title {
+    background-color: variables.$bgColor2;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0.4rem;
+
+    & p {
+      font-size: large;
+      color: lighten(variables.$text-color, 30%);
+
+      @media (max-width: variables.$breakPointMobile) {
+        font-size: medium;
+      }
+    }
+  }
+
+  &__notice p {
+    @include mixins.footnoteText;
+    font-size: x-small;
+    text-align: center;
+  }
+
+  .imageNotAvailable {
+    min-height: 6rem;
+  }
+
+  &__separator {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    @media (max-width: variables.$breakPointMobile) {
+      margin: 0.7rem 0rem;
+    }
+  }
+}
+
+.user .topGames {
+  &__top1-3 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 12rem;
+    margin-bottom: 4rem;
+    @media (max-width: variables.$breakPointMobile) {
+      margin-bottom: 3rem;
+      max-height: 9rem;
+    }
+
+    &__1,
+    .topGames__top1-3__2,
+    .topGames__top1-3__3 {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      min-width: 5rem;
+      max-width: 12rem;
+      height: 12rem;
+      position: relative;
+      @media (max-width: variables.$breakPointMobile) {
+        max-height: 9rem;
+      }
+      flex-grow: 1;
+
+      & img {
+        flex-grow: 1;
+      }
+    }
+
+    &__1 {
+      &__icon {
+        position: absolute;
+        top: 11rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.2rem;
+        background-color: variables.$bgColor2;
+        border-radius: 2rem;
+        @media (max-width: variables.$breakPointMobile) {
+          top: 7.8rem;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.2rem;
+        }
+      }
+    }
+    &__2 {
+      &__icon {
+        position: absolute;
+        top: 11rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.2rem;
+        background-color: variables.$bgColor2;
+        border-radius: 2rem;
+        @media (max-width: variables.$breakPointMobile) {
+          top: 7.8rem;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.2rem;
+        }
+      }
+    }
+    &__3 {
+      &__icon {
+        position: absolute;
+        top: 11rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.2rem;
+        background-color: variables.$bgColor2;
+        border-radius: 2rem;
+        @media (max-width: variables.$breakPointMobile) {
+          top: 7.8rem;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.2rem;
+        }
+      }
+    }
+
+    & .highlights__top1Game,
+    .highlights__top2Game,
+    .highlights__top3Game {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      width: 100%;
+      max-height: 12rem;
+      @media (max-width: variables.$breakPointMobile) {
+        max-height: 9rem;
+      }
+      margin: auto;
+      flex-grow: 1;
+      padding: 0.5rem 0rem;
+    }
+
+    &__1 .highlights__top1Game {
+      box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 255, 0.3);
+      padding: 0rem;
+    }
+
+    &__2 .highlights__top2Game {
+      width: 85%;
+      margin-right: 0rem;
+    }
+
+    &__3 .highlights__top3Game {
+      width: 85%;
+      margin-left: 0rem;
+    }
+
+    & .highlights__eampty {
+      width: 85%;
+      background-color: lighten(variables.$text-color, 80%);
+    }
+  }
+
+  &__top4-10 {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+
+    & .topGames__top4-10__4,
+    .topGames__top4-10__5,
+    .topGames__top4-10__6,
+    .topGames__top4-10__7,
+    .topGames__top4-10__8,
+    .topGames__top4-10__9,
+    .topGames__top4-10__10 {
+      width: 6rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      & .highlights__top4Game,
+      .highlights__top5Game,
+      .highlights__top6Game,
+      .highlights__top7Game,
+      .highlights__top8Game,
+      .highlights__top9Game,
+      .highlights__top10Game,
+      .highlights__eampty {
+        height: 8rem;
+        min-width: 4.5rem;
+      }
+
+      &__rank {
+        background-color: variables.$bgColor2;
+        text-align: center;
+        padding: 0.2rem;
+        width: 50%;
+        border-radius: 2rem;
+      }
+      @media (max-width: variables.$breakPointMobile) {
+        width: 5rem;
+        margin-bottom: 0.8rem;
+        width: 4rem;
+
+        & .highlights__top4Game,
+        .highlights__top5Game,
+        .highlights__top6Game,
+        .highlights__top7Game,
+        .highlights__top8Game,
+        .highlights__top9Game,
+        .highlights__top10Game,
+        .highlights__eampty {
+          height: 6rem;
+          min-width: 4rem;
+        }
+
+        &__rank {
+          background-color: variables.$bgColor2;
+          text-align: center;
+          padding: 0.2rem;
+          width: 75%;
+          font-size: x-small;
+          border-radius: 0rem 0rem 0.5rem 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.user .topGamesClaps {
+  margin: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  &__counter {
+    margin-bottom: 0.3rem;
+  }
+
+  & .inconClap {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0.1;
+    color: variables.$bgColor1;
+    background-color: lighten(variables.$text-color, 50%);
+    cursor: pointer;
+  }
+}
+
+.user .playedGames {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__title {
+    text-align: center;
+
+    & p {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+      font-size: large;
+      color: lighten(variables.$text-color, 30%);
+
+      @media (max-width: variables.$breakPointMobile) {
+        font-size: medium;
+      }
+    }
+  }
+
+  &__decade {
+    margin: 1rem 0rem 3rem 0rem;
+    &__title {
+      color: lighten(variables.$text-color, 30%);
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+
+      & h2 {
+        margin: 0rem;
+        margin-right: 0.3rem;
+      }
+
+      & div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        color: lighten(variables.$text-color, 70%);
+        background-color: variables.$bgColor2;
+        min-width: 1rem;
+        min-height: 1rem;
+        padding: 0.1rem;
+        font-size: smaller;
+      }
+    }
+
+    &__showLessButton {
+      margin-top: 2rem;
+      color: lighten(variables.$text-color, 70%);
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      & > div {
+        cursor: pointer;
+        text-align: center;
+        background-color: lighten(variables.$text-color, 90%);
+        padding: 0.3rem;
+        min-width: 2.2rem;
+        min-height: 1rem;
+        border-radius: 1rem;
+      }
+
+      & button {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.user .playedGames .playedGames__decade .playedGames__decade__cards {
+  display: grid;
+  // width: 100%;
+  grid-template-columns: repeat(auto-fit, 6.2rem);
+  column-gap: 0rem;
+  justify-content: space-around;
+
+  & .playedGameCard {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 1rem 0.3rem;
+
+    &__imageContainer {
+      flex-grow: 1;
+      height: 8rem;
+      min-width: 5.8rem;
+      max-width: 6rem;
+
+      & img {
+        border-radius: 0.5rem;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+    }
+
+    &__infoContainer {
+      flex-grow: 2;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+
+    &__titleContainer {
+      width: 100%;
+      height: auto;
+
+      & p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &__yearContainer {
+      margin-top: 0.5rem;
+      & p {
+        padding: 0.4rem;
+        display: inline-block;
+        background-color: lighten(variables.$text-color, 30%);
+        color: variables.$bgColor1;
+        font-size: small;
+        border-radius: 0.5rem;
+        margin: 0rem;
+      }
+    }
+  }
+}
+
+.user .playedGamesLikes {
+  background-color: variables.$bgColor2;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 2rem 0rem;
+
+  &__icon--color,
+  .playedGamesLikes__icon--gray {
+    cursor: pointer;
+    border-radius: 1rem;
+    width: 6rem;
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    box-shadow: 0rem 0.3rem 0rem rgba(0, 0, 255, 0.2);
+  }
+
+  &__icon--color,
+  .playedGamesLikes__icon--gray {
+    background-color: gray;
+  }
+  &__icon--color,
+  .playedGamesLikes__icon--color {
+    background-color: white;
+  }
+}
+
+.user .LoadMoreButton {
+  cursor: pointer;
+}

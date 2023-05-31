@@ -1,0 +1,9 @@
+@use '../abstracts/mixins';
+
+.pageContent {
+    @include mixins.appEnclosure;
+    margin: 0rem auto 0.6rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}

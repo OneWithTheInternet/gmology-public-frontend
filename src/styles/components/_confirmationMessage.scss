@@ -1,0 +1,8 @@
+@use '../../styles/abstracts/variables';
+
+.confirmationMessage {
+    color: variables.$confirmationColor--dark;
+    background-color: variables.$confirmationColor;
+    margin: 10px 0px;
+    padding: 5px;
+}

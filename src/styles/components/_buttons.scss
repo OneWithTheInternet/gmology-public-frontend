@@ -1,0 +1,25 @@
+@use '../abstracts/variables';
+
+.buttonLoginContainer a {
+    text-decoration: none;
+
+    .buttonLogin {
+        background-color: variables.$bgColor--dark;
+        color: variables.$bgColor3;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+.buttonSingupContainer a {
+    text-decoration: none;
+
+    .buttonSignup {
+        background-color: variables.$highlightColor--2;
+        color: variables.$bgColor3;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+    }
+}

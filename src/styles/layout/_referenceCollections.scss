@@ -1,0 +1,71 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.referenceUsers {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  border-radius: variables.$sectionBorderRadius;
+  margin: 1rem 0rem;
+  text-align: center;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  & h4 {
+    margin: 0rem;
+    color: lighten(variables.$text-color, 20%);
+  }
+
+  & p {
+    margin: 0.4rem;
+    color: lighten(variables.$text-color, 40%);
+  }
+
+  &__title {
+    @include mixins.h2GrayAllCaps;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    & .refUser {
+      width: 45%;
+      background-color: variables.$bgColor2;
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 0.5rem 1rem;
+      border-radius: variables.$sectionBorderRadius;
+      margin: 0.5rem 0rem;
+      min-height: 10rem;
+      max-height: 11rem;
+      cursor: pointer;
+
+      .avatarContainer {
+        margin-top: 0.3rem;
+        margin-bottom: 0.4rem;
+      }
+
+      &__text {
+        &__main {
+          @include mixins.truncate;
+        }
+
+        &__sub {
+          @include mixins.truncate;
+        }
+      }
+    }
+  }
+}

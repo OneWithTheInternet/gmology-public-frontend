@@ -1,0 +1,18 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.postContent {
+
+    & .postText {
+        @include mixins.postText;
+    }
+}
+
+.comment__text {
+    @include mixins.comment__text;
+}
+
+.leaveComment textarea {
+    width: 100%;
+    height: variables.$textInputHeight--tall;
+}

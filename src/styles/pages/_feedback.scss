@@ -1,0 +1,13 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.feedback {
+
+    p {
+        margin: 10px 0px;
+    }
+
+    input {
+        @include mixins.basicInputField;
+    }
+}

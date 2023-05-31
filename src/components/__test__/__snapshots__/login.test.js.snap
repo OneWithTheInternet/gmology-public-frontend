@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div
+  className="sectionsContainer"
+>
+  <section
+    className="login"
+  >
+    <h1>
+      Log in
+    </h1>
+    <div>
+      Create a 
+      <a
+        href="/signup"
+        onClick={[Function]}
+      >
+        new account here
+      </a>
+    </div>
+    <form
+      className="login__form"
+      data-testid="loginForm"
+      onSubmit={[Function]}
+    >
+      <label>
+        Email
+        <input
+          autoComplete="email"
+          data-testid="emailField"
+          onChange={[Function]}
+          placeholder="example@example.com"
+          required={true}
+          type="email"
+          value=""
+        />
+      </label>
+      <label>
+        Password
+        <input
+          autoComplete="password"
+          data-testid="passwordField"
+          maxLength={20}
+          minLength={6}
+          name="password"
+          onChange={[Function]}
+          required={true}
+          type="password"
+          value=""
+        />
+      </label>
+      <input
+        className="submitButton form__button"
+        type="submit"
+        value="Submit"
+      />
+      <hr />
+      <div>
+        <a
+          href="/forgot-password"
+          onClick={[Function]}
+        >
+          <p>
+            Forgot your password?
+          </p>
+        </a>
+      </div>
+    </form>
+  </section>
+</div>
+`;

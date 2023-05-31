@@ -1,0 +1,2115 @@
+body {
+  font-family: PT Sans;
+  color: #000000;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 20px 0px 30px 0px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0px 30px 0px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 0px;
+}
+
+p {
+  font-weight: normal;
+}
+
+.creationDate {
+  font-size: small;
+}
+
+form * {
+  display: inline-block;
+  width: 100%;
+}
+
+form .form__fieldContainer {
+  position: relative;
+}
+form .form__optionsIcon {
+  position: absolute;
+  left: 85%;
+  top: 0.2rem;
+  bottom: 0px;
+  width: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+form .form__optionsIcon svg {
+  font-size: 24px;
+}
+
+form label {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+form input {
+  height: 60px;
+  border-radius: 1rem;
+  width: 100%;
+  border: 1px solid #bdb5b5;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+form .form__button {
+  padding: 10px;
+  height: 60px;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 10px 0px 20px;
+  background-color: #272735;
+  color: #ffffff;
+}
+
+form textarea {
+  height: 60px;
+  border-radius: 1rem;
+  width: 100%;
+  border: 1px solid #bdb5b5;
+  padding: 10px;
+  margin: 10px 0px;
+  height: 180px;
+}
+
+textarea {
+  resize: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.icon1 {
+  padding: 0px;
+  color: gray;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.icon2 {
+  padding: 5px;
+  color: black;
+  display: block;
+  border-radius: 50%;
+}
+
+.buttonLoginContainer a {
+  text-decoration: none;
+}
+.buttonLoginContainer a .buttonLogin {
+  background-color: #272735;
+  color: rgb(237, 235, 235);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+}
+
+.buttonSingupContainer a {
+  text-decoration: none;
+}
+.buttonSingupContainer a .buttonSignup {
+  background-color: #d81ae5;
+  color: rgb(237, 235, 235);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+}
+
+.divider {
+  width: 100%;
+}
+
+.createPost__form label textarea {
+  height: 100px;
+}
+
+.postContent .postText {
+  margin: 5px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+.comment__text {
+  margin: 5px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+.leaveComment textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.accountSettings .confirmationMessage {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  z-index: 1;
+}
+
+.accountSettings .errorMessage {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  z-index: 1;
+  background-color: red;
+  color: #ffffff;
+}
+
+.accountDeletion p {
+  margin-bottom: 20px;
+}
+
+.accountDeletion .accountDeletion__cancel {
+  padding: 10px;
+  height: 60px;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 10px 0px 20px;
+  background-color: #272735;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  background-color: #272735;
+}
+
+.accountDeletion .accountDeletion__submit {
+  padding: 10px;
+  height: 60px;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 10px 0px 20px;
+  background-color: #272735;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  background-color: red;
+  color: #ffffff;
+}
+
+.accountDeletion .accountDeletion__continue {
+  height: 60px;
+  border-radius: 1rem;
+  width: 100%;
+  border: 1px solid #bdb5b5;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.feedback p {
+  margin: 10px 0px;
+}
+.feedback input {
+  height: 60px;
+  border-radius: 1rem;
+  width: 100%;
+  border: 1px solid #bdb5b5;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.gameResults a {
+  color: inherit;
+  text-decoration: none;
+}
+.gameResults .searchResultCard {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0rem;
+}
+.gameResults .searchResultCard__imageContainer {
+  flex-grow: 1;
+  margin-right: 0.6rem;
+  height: 4.5rem;
+  width: 3rem;
+}
+.gameResults .searchResultCard__imageContainer img {
+  border-radius: 0.5rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.gameResults .searchResultCard__infoContainer {
+  flex-grow: 2;
+  width: 80%;
+  height: auto;
+}
+.gameResults .searchResultCard__titleContainer {
+  width: 100%;
+  height: auto;
+}
+.gameResults .searchResultCard__titleContainer p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gameResults .searchResultCard__yearContainer {
+  color: gray;
+}
+
+.pageContent .game {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.game .mainInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-top: 1rem;
+}
+.game .mainInfo__imageContainer, .game .mainInfo .imageNotAvailable {
+  min-height: 13rem;
+  margin: auto;
+  padding: 0rem 0.6rem;
+  min-width: 10rem;
+  max-width: 16rem;
+}
+.game .mainInfo__imageContainer img, .game .mainInfo .imageNotAvailable img {
+  border-radius: 0.5rem;
+}
+.game .mainInfo__summary {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  padding: 0rem 0.6rem;
+  align-items: center;
+}
+.game .mainInfo__summary__releaseDate {
+  margin-top: 0.5rem;
+}
+.game .mainInfo__summary__releaseDate p {
+  padding: 0.4rem;
+  display: inline-block;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+.game .mainInfo__summary__title h2 {
+  margin: 0rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to be shown */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.game .mainInfo__summary__stats {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.mainInfo__summary__stats_top1Count {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 1rem;
+  align-items: center;
+}
+.mainInfo__summary__stats_top1Count .topOneIcon {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 2rem;
+  margin-right: 0.2rem;
+}
+.mainInfo__summary__stats_top1Count img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mainInfo__summary__stats_playCount {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 1rem;
+  align-items: center;
+  width: 1.7rem;
+}
+.mainInfo__summary__stats_playCount .playedCountIcon {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 1.3rem;
+  margin-right: 0.2rem;
+}
+.mainInfo__summary__stats_playCount img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.game_buttons {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+.game_buttons .buttonAddPlayed, .game_buttons .buttonRemovePlayed, .game_buttons .topSelector select, .game_buttons .isTopButton input {
+  min-width: 14rem;
+}
+.game_buttons .buttonRemovePlayed form input, .game_buttons .isTopButton input {
+  background-color: #b93feb;
+  color: #ffffff;
+  border: none;
+  border: none;
+}
+.game_buttons .topSelector select {
+  height: 60px;
+  border-radius: 1rem;
+  width: 100%;
+  border: 1px solid #bdb5b5;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.game_otherInfo {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.game_otherInfo p {
+  margin: 0.8rem 0rem;
+}
+
+.game_otherInfo__summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to be shown */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10; /* number of lines to be shown in trucation */
+}
+
+body .pageContentContainer .homepage {
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+body .pageContentContainer .homepage section {
+  margin: 0rem;
+  border-radius: 0rem;
+  text-align: center;
+  padding: 0rem;
+}
+
+body .pageContentContainer .homepage .notice {
+  border-radius: 1rem 1rem 0rem 0rem;
+  background-image: linear-gradient(rgb(37, 84, 187), rgb(14, 139, 189));
+}
+body .pageContentContainer .homepage .notice__text {
+  color: rgb(228, 208, 208);
+}
+body .pageContentContainer .homepage .notice__text p {
+  color: rgb(217, 190, 219);
+  font-size: small;
+  padding: 0.4rem;
+  margin: 0rem;
+  text-align: center;
+}
+
+body .homepage .giveawayNotice {
+  background-color: rgb(231, 97, 20);
+}
+body .homepage .giveawayNotice__text {
+  padding: 0.2rem;
+}
+body .homepage .giveawayNotice__text a {
+  color: rgb(237, 235, 235);
+  font-style: italic;
+  font-size: smaller;
+}
+
+body .pageContentContainer .homepage .headline {
+  min-height: 12rem;
+  background-color: white;
+  padding: 0rem;
+  position: relative;
+}
+body .pageContentContainer .homepage .headline__background {
+  width: 100%;
+  background: url("../assets/gmology_overview.png") no-repeat center;
+  background-size: cover;
+  background-position: center;
+}
+body .pageContentContainer .homepage .headline__background--purple {
+  background: rgba(216, 26, 229, 0.4);
+  width: 100%;
+  min-height: 12rem;
+}
+body .pageContentContainer .homepage .headline__background--black {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-content: center;
+  min-height: 12rem;
+  padding: 2rem 0rem;
+}
+body .pageContentContainer .homepage .headline__logo {
+  width: 100%;
+  padding: 0% 15%;
+}
+body .pageContentContainer .homepage .headline__logo div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 10rem;
+  margin: auto;
+  padding: 0rem 0.7rem;
+  background-color: rgb(192, 2, 157);
+}
+body .pageContentContainer .homepage .headline__title {
+  width: 100%;
+  color: white;
+  padding: 0% 15%;
+}
+body .pageContentContainer .homepage .headline__title h1 {
+  margin: 1rem 0rem 1rem 0rem;
+}
+body .pageContentContainer .homepage .headline__title div {
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+}
+body .pageContentContainer .homepage .headline__signUp {
+  padding: 0% 15%;
+  width: 100%;
+  margin: 0rem 0rem 1rem 0rem;
+}
+body .pageContentContainer .homepage .headline__signUp input {
+  background: none;
+  border: none;
+  border-radius: 1rem;
+  font: inherit;
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: bold;
+  color: white;
+  outline: inherit;
+  padding: 0.6rem;
+  width: 7rem;
+  margin: 0.4rem;
+  background-color: rgb(231, 97, 20);
+}
+
+body .pageContentContainer .homepage .productDetails {
+  padding: 0rem 1rem;
+  background-color: #f4e1fc;
+}
+body .pageContentContainer .homepage .productDetails h3 {
+  color: #b93feb;
+  font-weight: bold;
+  margin: 1rem 0rem;
+  text-transform: uppercase;
+}
+body .pageContentContainer .homepage .productDetails Strong {
+  color: black;
+}
+body .pageContentContainer .homepage .productDetails p {
+  color: #333333;
+}
+body .pageContentContainer .homepage .productDetails iframe {
+  width: 100%;
+  max-height: 250px;
+  margin-bottom: 1rem;
+}
+
+body .pageContentContainer .homepage .benefits {
+  position: relative;
+  top: -0.5rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+body .pageContentContainer .homepage .benefits p {
+  margin-bottom: 1rem;
+}
+body .pageContentContainer .homepage .benefits h2 {
+  text-transform: uppercase;
+  color: white;
+  color: #d81ae5;
+  margin: 1rem 0rem;
+  padding: 0rem 2rem;
+}
+body .pageContentContainer .homepage .benefits__chronology {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+body .pageContentContainer .homepage .benefits__chronology h2 {
+  color: rgb(192, 2, 157);
+  margin-bottom: 0.2rem;
+}
+body .pageContentContainer .homepage .benefits__chronology h4 {
+  color: rgb(192, 2, 157);
+}
+body .pageContentContainer .homepage .benefits__chronology img {
+  border-radius: 5rem;
+  width: 90%;
+}
+body .pageContentContainer .homepage .benefits__chronology2 {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+body .pageContentContainer .homepage .benefits__chronology2 h2 {
+  color: rgb(192, 2, 157);
+  margin-bottom: 0.2rem;
+}
+body .pageContentContainer .homepage .benefits__chronology2 h4 {
+  color: rgb(192, 2, 157);
+}
+body .pageContentContainer .homepage .benefits__chronology2 img {
+  border-radius: 0rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+body .pageContentContainer .homepage .benefits__top10 {
+  padding: 0rem 0.5rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+body .pageContentContainer .homepage .benefits__top10 img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  margin-top: 0rem;
+}
+body .pageContentContainer .homepage .benefits__barebones {
+  padding: 0rem 0.5rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  margin-top: 2rem;
+}
+body .pageContentContainer .homepage .benefits__barebones img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  margin-top: 0rem;
+}
+body .pageContentContainer .homepage .benefits__topCount {
+  padding: 0rem 0.5rem;
+  margin-top: 2rem;
+}
+body .pageContentContainer .homepage .benefits__topCount h2 {
+  margin-top: 0rem;
+}
+body .pageContentContainer .homepage .benefits__likesClaps {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+body .pageContentContainer .homepage .benefits__likesClaps h2 {
+  color: rgb(192, 2, 157);
+}
+body .pageContentContainer .homepage .benefits__likesClaps img {
+  border-radius: 5rem;
+  width: 90%;
+}
+
+body .pageContentContainer .homepage .poweredBy {
+  background-color: rgb(227, 227, 227);
+  margin: 3rem 0rem 3rem 0rem;
+}
+body .pageContentContainer .homepage .poweredBy h2 {
+  text-transform: uppercase;
+  color: #525270;
+}
+body .pageContentContainer .homepage .poweredBy p {
+  color: rgb(128, 128, 128);
+  margin-top: 2rem;
+}
+body .pageContentContainer .homepage .poweredBy__icons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0rem 1rem;
+}
+body .pageContentContainer .homepage .poweredBy__icons img {
+  width: 8rem;
+}
+
+body .pageContentContainer .homepage .startNow {
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: rgb(227, 227, 227);
+}
+body .pageContentContainer .homepage .startNow input {
+  animation: wiggle 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86) 1s 2 alternate backwards;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+@keyframes slidein {
+  0% {
+    translate: 0.5rem;
+    opacity: 0%;
+  }
+  100% {
+    translate: 0rem;
+    opacity: 100%;
+  }
+}
+@keyframes wiggle {
+  0% {
+    translate: 0rem;
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.99, 1.01);
+  }
+  50% {
+    translate: 0rem -0.5rem;
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(0.99, 1.01);
+  }
+  100% {
+    translate: 0rem;
+    transform: scale(1, 1);
+  }
+}
+body .pageContentContainer .homepage .startNow__signUp {
+  width: 100%;
+  position: static;
+}
+body .pageContentContainer .homepage .startNow__signUp input {
+  background: none;
+  border: none;
+  border-radius: 1rem;
+  font: inherit;
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: bold;
+  color: white;
+  outline: inherit;
+  padding: 0.6rem;
+  width: 7rem;
+  margin: 0.4rem;
+  background-color: rgb(231, 97, 20);
+}
+
+body .pageContentContainer .homepage .footNotes {
+  background-color: rgb(227, 227, 227);
+  padding: 0rem 0.2rem;
+}
+body .pageContentContainer .homepage .footNotes p {
+  color: rgb(139, 139, 139);
+  font-size: small;
+}
+
+.user hr {
+  border: none;
+  border-top: 2px dotted;
+  text-align: center;
+  color: #b3b3b3;
+}
+
+.user .mainInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0rem 1rem 0.5rem 1rem;
+}
+.user .mainInfo > :nth-child(1) {
+  margin-top: 0.3rem;
+}
+.user .mainInfo > :nth-child(2) {
+  margin-top: 1rem;
+}
+.user .mainInfo__options {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.user .mainInfo__user {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.user .notice {
+  background-image: linear-gradient(rgb(37, 84, 187), rgb(14, 139, 189));
+}
+.user .notice__text {
+  color: rgb(228, 208, 208);
+}
+.user .notice__text p {
+  color: rgb(217, 190, 219);
+  font-size: small;
+  padding: 0.4rem;
+  margin: 0rem;
+  text-align: center;
+}
+
+.mainInfo__user__head {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.mainInfo__user__head__avatar {
+  min-width: 4rem;
+  max-width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+.mainInfo__user__head__avatar img {
+  border-radius: 15rem;
+}
+.mainInfo__user__head p {
+  margin: 0.3rem 0rem;
+}
+.mainInfo__user__head__overview {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.mainInfo__user__head__overview p {
+  margin: 0.3rem 0rem;
+}
+.mainInfo__user__head__overview__name {
+  margin: 0rem 0rem 0.3rem 0rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to be shown */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* number of lines to be shown while truncating */
+}
+.mainInfo__user__head__overview__name h1 {
+  margin: 0rem;
+}
+.mainInfo__user__head__overview__stats {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.mainInfo__user__head__overview__stats > div {
+  margin-right: 0.2rem;
+}
+
+.mainInfo__user .buttonUserWatch {
+  min-width: 7rem;
+  max-width: 7rem;
+}
+.mainInfo__user .buttonUserWatch input {
+  height: 2.5rem;
+}
+.mainInfo__user .buttonUserWatch--watching input {
+  background-color: #b93feb;
+  color: #ffffff;
+  border: none;
+  background-color: #d81ae5;
+}
+
+.mainInfo__user .mainInfo__user__bio p {
+  color: #666666;
+}
+
+.user .topGames {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-top: 1rem;
+  min-height: 11rem;
+  margin-bottom: 1rem;
+}
+.user .topGames__title {
+  background-color: rgb(227, 227, 227);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 0.4rem;
+}
+.user .topGames__title p {
+  font-size: large;
+  color: #4d4d4d;
+}
+@media (max-width: 380px) {
+  .user .topGames__title p {
+    font-size: medium;
+  }
+}
+.user .topGames__notice p {
+  color: rgb(139, 139, 139);
+  font-size: small;
+  font-size: x-small;
+  text-align: center;
+}
+.user .topGames .imageNotAvailable {
+  min-height: 6rem;
+}
+.user .topGames__separator {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 380px) {
+  .user .topGames__separator {
+    margin: 0.7rem 0rem;
+  }
+}
+
+.user .topGames__top1-3 {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 12rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 380px) {
+  .user .topGames__top1-3 {
+    margin-bottom: 3rem;
+    max-height: 9rem;
+  }
+}
+.user .topGames__top1-3__1,
+.user .topGames__top1-3 .topGames__top1-3__2,
+.user .topGames__top1-3 .topGames__top1-3__3 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 5rem;
+  max-width: 12rem;
+  height: 12rem;
+  position: relative;
+  flex-grow: 1;
+}
+@media (max-width: 380px) {
+  .user .topGames__top1-3__1,
+  .user .topGames__top1-3 .topGames__top1-3__2,
+  .user .topGames__top1-3 .topGames__top1-3__3 {
+    max-height: 9rem;
+  }
+}
+.user .topGames__top1-3__1 img,
+.user .topGames__top1-3 .topGames__top1-3__2 img,
+.user .topGames__top1-3 .topGames__top1-3__3 img {
+  flex-grow: 1;
+}
+.user .topGames__top1-3__1__icon {
+  position: absolute;
+  top: 11rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.2rem;
+  background-color: rgb(227, 227, 227);
+  border-radius: 2rem;
+}
+@media (max-width: 380px) {
+  .user .topGames__top1-3__1__icon {
+    top: 7.8rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem;
+  }
+}
+.user .topGames__top1-3__2__icon {
+  position: absolute;
+  top: 11rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.2rem;
+  background-color: rgb(227, 227, 227);
+  border-radius: 2rem;
+}
+@media (max-width: 380px) {
+  .user .topGames__top1-3__2__icon {
+    top: 7.8rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem;
+  }
+}
+.user .topGames__top1-3__3__icon {
+  position: absolute;
+  top: 11rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.2rem;
+  background-color: rgb(227, 227, 227);
+  border-radius: 2rem;
+}
+@media (max-width: 380px) {
+  .user .topGames__top1-3__3__icon {
+    top: 7.8rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem;
+  }
+}
+.user .topGames__top1-3 .highlights__top1Game,
+.user .topGames__top1-3 .highlights__top2Game,
+.user .topGames__top1-3 .highlights__top3Game {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  width: 100%;
+  max-height: 12rem;
+  margin: auto;
+  flex-grow: 1;
+  padding: 0.5rem 0rem;
+}
+@media (max-width: 380px) {
+  .user .topGames__top1-3 .highlights__top1Game,
+  .user .topGames__top1-3 .highlights__top2Game,
+  .user .topGames__top1-3 .highlights__top3Game {
+    max-height: 9rem;
+  }
+}
+.user .topGames__top1-3__1 .highlights__top1Game {
+  box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 255, 0.3);
+  padding: 0rem;
+}
+.user .topGames__top1-3__2 .highlights__top2Game {
+  width: 85%;
+  margin-right: 0rem;
+}
+.user .topGames__top1-3__3 .highlights__top3Game {
+  width: 85%;
+  margin-left: 0rem;
+}
+.user .topGames__top1-3 .highlights__eampty {
+  width: 85%;
+  background-color: #cccccc;
+}
+.user .topGames__top4-10 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+.user .topGames__top4-10 .topGames__top4-10__4,
+.user .topGames__top4-10 .topGames__top4-10__5,
+.user .topGames__top4-10 .topGames__top4-10__6,
+.user .topGames__top4-10 .topGames__top4-10__7,
+.user .topGames__top4-10 .topGames__top4-10__8,
+.user .topGames__top4-10 .topGames__top4-10__9,
+.user .topGames__top4-10 .topGames__top4-10__10 {
+  width: 6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__top4Game,
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__top5Game,
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__top6Game,
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__top7Game,
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__top8Game,
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__top9Game,
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__top10Game,
+.user .topGames__top4-10 .topGames__top4-10__4 .highlights__eampty,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__top4Game,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__top5Game,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__top6Game,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__top7Game,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__top8Game,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__top9Game,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__top10Game,
+.user .topGames__top4-10 .topGames__top4-10__5 .highlights__eampty,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__top4Game,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__top5Game,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__top6Game,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__top7Game,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__top8Game,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__top9Game,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__top10Game,
+.user .topGames__top4-10 .topGames__top4-10__6 .highlights__eampty,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__top4Game,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__top5Game,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__top6Game,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__top7Game,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__top8Game,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__top9Game,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__top10Game,
+.user .topGames__top4-10 .topGames__top4-10__7 .highlights__eampty,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__top4Game,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__top5Game,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__top6Game,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__top7Game,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__top8Game,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__top9Game,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__top10Game,
+.user .topGames__top4-10 .topGames__top4-10__8 .highlights__eampty,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__top4Game,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__top5Game,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__top6Game,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__top7Game,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__top8Game,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__top9Game,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__top10Game,
+.user .topGames__top4-10 .topGames__top4-10__9 .highlights__eampty,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__top4Game,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__top5Game,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__top6Game,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__top7Game,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__top8Game,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__top9Game,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__top10Game,
+.user .topGames__top4-10 .topGames__top4-10__10 .highlights__eampty {
+  height: 8rem;
+  min-width: 4.5rem;
+}
+.user .topGames__top4-10 .topGames__top4-10__4__rank,
+.user .topGames__top4-10 .topGames__top4-10__5__rank,
+.user .topGames__top4-10 .topGames__top4-10__6__rank,
+.user .topGames__top4-10 .topGames__top4-10__7__rank,
+.user .topGames__top4-10 .topGames__top4-10__8__rank,
+.user .topGames__top4-10 .topGames__top4-10__9__rank,
+.user .topGames__top4-10 .topGames__top4-10__10__rank {
+  background-color: rgb(227, 227, 227);
+  text-align: center;
+  padding: 0.2rem;
+  width: 50%;
+  border-radius: 2rem;
+}
+@media (max-width: 380px) {
+  .user .topGames__top4-10 .topGames__top4-10__4,
+  .user .topGames__top4-10 .topGames__top4-10__5,
+  .user .topGames__top4-10 .topGames__top4-10__6,
+  .user .topGames__top4-10 .topGames__top4-10__7,
+  .user .topGames__top4-10 .topGames__top4-10__8,
+  .user .topGames__top4-10 .topGames__top4-10__9,
+  .user .topGames__top4-10 .topGames__top4-10__10 {
+    width: 5rem;
+    margin-bottom: 0.8rem;
+    width: 4rem;
+  }
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__top4Game,
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__top5Game,
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__top6Game,
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__top7Game,
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__top8Game,
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__top9Game,
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__top10Game,
+  .user .topGames__top4-10 .topGames__top4-10__4 .highlights__eampty,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__top4Game,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__top5Game,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__top6Game,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__top7Game,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__top8Game,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__top9Game,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__top10Game,
+  .user .topGames__top4-10 .topGames__top4-10__5 .highlights__eampty,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__top4Game,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__top5Game,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__top6Game,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__top7Game,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__top8Game,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__top9Game,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__top10Game,
+  .user .topGames__top4-10 .topGames__top4-10__6 .highlights__eampty,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__top4Game,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__top5Game,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__top6Game,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__top7Game,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__top8Game,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__top9Game,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__top10Game,
+  .user .topGames__top4-10 .topGames__top4-10__7 .highlights__eampty,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__top4Game,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__top5Game,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__top6Game,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__top7Game,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__top8Game,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__top9Game,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__top10Game,
+  .user .topGames__top4-10 .topGames__top4-10__8 .highlights__eampty,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__top4Game,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__top5Game,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__top6Game,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__top7Game,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__top8Game,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__top9Game,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__top10Game,
+  .user .topGames__top4-10 .topGames__top4-10__9 .highlights__eampty,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__top4Game,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__top5Game,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__top6Game,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__top7Game,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__top8Game,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__top9Game,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__top10Game,
+  .user .topGames__top4-10 .topGames__top4-10__10 .highlights__eampty {
+    height: 6rem;
+    min-width: 4rem;
+  }
+  .user .topGames__top4-10 .topGames__top4-10__4__rank,
+  .user .topGames__top4-10 .topGames__top4-10__5__rank,
+  .user .topGames__top4-10 .topGames__top4-10__6__rank,
+  .user .topGames__top4-10 .topGames__top4-10__7__rank,
+  .user .topGames__top4-10 .topGames__top4-10__8__rank,
+  .user .topGames__top4-10 .topGames__top4-10__9__rank,
+  .user .topGames__top4-10 .topGames__top4-10__10__rank {
+    background-color: rgb(227, 227, 227);
+    text-align: center;
+    padding: 0.2rem;
+    width: 75%;
+    font-size: x-small;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+  }
+}
+
+.user .topGamesClaps {
+  margin: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.user .topGamesClaps__counter {
+  margin-bottom: 0.3rem;
+}
+.user .topGamesClaps .inconClap {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 0.1;
+  color: #ffffff;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.user .playedGames {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.user .playedGames__title {
+  text-align: center;
+}
+.user .playedGames__title p {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  font-size: large;
+  color: #4d4d4d;
+}
+@media (max-width: 380px) {
+  .user .playedGames__title p {
+    font-size: medium;
+  }
+}
+.user .playedGames__decade {
+  margin: 1rem 0rem 3rem 0rem;
+}
+.user .playedGames__decade__title {
+  color: #4d4d4d;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.user .playedGames__decade__title h2 {
+  margin: 0rem;
+  margin-right: 0.3rem;
+}
+.user .playedGames__decade__title div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  color: #b3b3b3;
+  background-color: rgb(227, 227, 227);
+  min-width: 1rem;
+  min-height: 1rem;
+  padding: 0.1rem;
+  font-size: smaller;
+}
+.user .playedGames__decade__showLessButton {
+  margin-top: 2rem;
+  color: #b3b3b3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.user .playedGames__decade__showLessButton > div {
+  cursor: pointer;
+  text-align: center;
+  background-color: #e6e6e6;
+  padding: 0.3rem;
+  min-width: 2.2rem;
+  min-height: 1rem;
+  border-radius: 1rem;
+}
+.user .playedGames__decade__showLessButton button {
+  padding: 0.5rem;
+}
+
+.user .playedGames .playedGames__decade .playedGames__decade__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 6.2rem);
+  -moz-column-gap: 0rem;
+       column-gap: 0rem;
+  justify-content: space-around;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 1rem 0.3rem;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard__imageContainer {
+  flex-grow: 1;
+  height: 8rem;
+  min-width: 5.8rem;
+  max-width: 6rem;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard__imageContainer img {
+  border-radius: 0.5rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard__infoContainer {
+  flex-grow: 2;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard__titleContainer {
+  width: 100%;
+  height: auto;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard__titleContainer p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard__yearContainer {
+  margin-top: 0.5rem;
+}
+.user .playedGames .playedGames__decade .playedGames__decade__cards .playedGameCard__yearContainer p {
+  padding: 0.4rem;
+  display: inline-block;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  font-size: small;
+  border-radius: 0.5rem;
+  margin: 0rem;
+}
+
+.user .playedGamesLikes {
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+.user .playedGamesLikes__icon--color,
+.user .playedGamesLikes .playedGamesLikes__icon--gray {
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 6rem;
+  padding: 0.5rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  box-shadow: 0rem 0.3rem 0rem rgba(0, 0, 255, 0.2);
+}
+.user .playedGamesLikes__icon--color,
+.user .playedGamesLikes .playedGamesLikes__icon--gray {
+  background-color: gray;
+}
+.user .playedGamesLikes__icon--color,
+.user .playedGamesLikes .playedGamesLikes__icon--color {
+  background-color: white;
+}
+
+.user .LoadMoreButton {
+  cursor: pointer;
+}
+
+.giveaway li {
+  margin-bottom: 1rem;
+}
+.giveaway li a {
+  margin: 0rem 0.3rem;
+}
+
+.header {
+  width: 100%;
+  min-width: 320px;
+  max-width: 480px;
+  margin: auto;
+  padding: 0rem 1.2rem 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 0.1rem;
+}
+.header .logoContainer {
+  width: 12%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.header .searchIcon {
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+.header .searchIcon div {
+  width: 30px;
+}
+
+.userMenu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+.userMenu .userImageContainer {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 0.8rem;
+}
+.userMenu .userImageContainer img {
+  border-radius: 0.5rem;
+}
+
+.dropdown {
+  position: relative;
+  z-index: 2;
+}
+.dropdown .userTag__userContainer__nameContainer {
+  color: grey;
+}
+.dropdown .dropdown__menuIconContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+.dropdown__closeIcon {
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+.dropdown__menu {
+  min-width: 75%;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  right: 0rem;
+  top: 0rem;
+  padding: 15px 20px;
+  margin-top: 0px;
+  list-style-type: none;
+  min-height: 100vh;
+}
+.dropdown__menu li {
+  margin: 0.5rem 0rem;
+  width: 100%;
+}
+.dropdown__menu :nth-child(1) {
+  text-decoration: none;
+}
+
+.postCard {
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  width: 100%;
+}
+.postCard .postText, .postCard .commentsCounter, .postCard .creationDate {
+  padding: 0px 10px;
+  margin: 5px 0px;
+  display: inline-block;
+  width: 100%;
+}
+.postCard .userTag {
+  padding: 0px 10px;
+}
+.postCard .commentsCounter {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.comment {
+  padding: 10px;
+  margin: 5px 0px;
+  margin-bottom: 15px;
+  border-left: solid lightgray 4px;
+}
+
+.searchBar {
+  width: 100%;
+  min-width: 320px;
+  max-width: 480px;
+  margin: auto;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0rem 0.7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
+  background-color: rgb(227, 227, 227);
+}
+.searchBar a {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+}
+.searchBar__input {
+  flex-grow: 1;
+}
+.searchBar__input input {
+  height: 60px;
+  border-radius: 1rem;
+  width: 100%;
+  border: 1px solid #bdb5b5;
+  padding: 10px;
+  margin: 10px 0px;
+  height: 50px;
+  margin: 0rem;
+  padding: 0px, 15px;
+}
+.searchBar__input input:focus {
+  border: solid 1px rgb(237, 235, 235);
+}
+.searchBar__searchIcon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  right: 0rem;
+  cursor: pointer;
+}
+.searchBar__searchIcon div {
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.searchBar__xmark {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  left: 0rem;
+  cursor: pointer;
+}
+.searchBar__xmark div {
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.searchBar .errorMessage {
+  width: 100%;
+  text-align: center;
+}
+
+.searchBar .loader {
+  position: absolute;
+  top: 3.2rem;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 255, 0.2);
+  border-radius: 0.5rem;
+}
+
+.searchPreview {
+  position: absolute;
+  top: 4rem;
+  z-index: 1;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 255, 0.2);
+  border-radius: 0.5rem;
+}
+.searchPreview__filter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: solid 1px grey;
+}
+.searchPreview .gameListCard {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0.6rem 0rem;
+}
+.searchPreview .gameListCard__imageContainer {
+  margin-right: 0.6rem;
+  height: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+}
+.searchPreview .gameListCard__imageContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.searchPreview .gameListCard__text {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  height: auto;
+}
+.searchPreview .gameListCard__text p {
+  margin: 0.2rem 0rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.searchPreview .gameListCard__text__year p {
+  color: #999999;
+}
+.searchPreview .userListCard {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0.6rem 0rem;
+}
+.searchPreview .userListCard__imageContainer {
+  margin-right: 0.6rem;
+  height: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+}
+.searchPreview .userListCard__imageContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.searchPreview .userListCard__text {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  height: auto;
+}
+.searchPreview .userListCard__text p {
+  margin: 0.2rem 0rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.searchPreview .userListCard__text__year p {
+  color: #999999;
+}
+.searchPreview__seeAllButton {
+  margin: 1rem 0rem;
+  width: 100%;
+  text-decoration: underline;
+}
+
+.pageContent {
+  width: 100%;
+  min-width: 320px;
+  max-width: 480px;
+  margin: auto;
+  margin: 0rem auto 0.6rem auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.followers .followers__list .userListCard {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0.6rem 0rem;
+}
+.followers .followers__list .userListCard__imageContainer {
+  margin-right: 0.6rem;
+  height: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+}
+.followers .followers__list .userListCard__imageContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.followers .followers__list .userListCard__text {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  height: auto;
+}
+.followers .followers__list .userListCard__text p {
+  margin: 0.2rem 0rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.followers .followers__list .userListCard__text__year p {
+  color: #999999;
+}
+
+.following .following__list .userListCard {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0.6rem 0rem;
+}
+.following .following__list .userListCard__imageContainer {
+  margin-right: 0.6rem;
+  height: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+}
+.following .following__list .userListCard__imageContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.following .following__list .userListCard__text {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  height: auto;
+}
+.following .following__list .userListCard__text p {
+  margin: 0.2rem 0rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.following .following__list .userListCard__text__year p {
+  color: #999999;
+}
+
+.referenceUsers {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+.referenceUsers a {
+  text-decoration: none;
+  color: inherit;
+}
+.referenceUsers h4 {
+  margin: 0rem;
+  color: #333333;
+}
+.referenceUsers p {
+  margin: 0.4rem;
+  color: #666666;
+}
+.referenceUsers__title {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.referenceUsers__title h2 {
+  text-transform: uppercase;
+  color: #525270;
+}
+.referenceUsers__title h2 {
+  margin-bottom: 0.6rem;
+}
+.referenceUsers__list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.referenceUsers__list .refUser {
+  width: 45%;
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0rem;
+  min-height: 10rem;
+  max-height: 11rem;
+  cursor: pointer;
+}
+.referenceUsers__list .refUser .avatarContainer {
+  margin-top: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+.referenceUsers__list .refUser__text__main {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to be shown */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.referenceUsers__list .refUser__text__sub {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to be shown */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.footer {
+  width: 100%;
+  min-width: 320px;
+  max-width: 480px;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  color: #b3b3b3;
+  padding: 0rem 0.7rem;
+}
+.footer h4 {
+  color: rgb(227, 227, 227);
+}
+.footer a {
+  text-decoration: none;
+}
+.footer__imageContainer {
+  max-width: 5rem;
+  min-width: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__support {
+  width: 100%;
+}
+.footer .footer__support__text {
+  color: #b3b3b3;
+}
+.footer .footer__support__links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+}
+.footer .footer__support__links__patreon {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  margin-right: 1rem;
+}
+.footer .footer__support__links__patreon .iconPatreon {
+  color: #b3b3b3;
+  font-size: 2rem;
+}
+.footer .footer__support__links__patreon__text a {
+  color: rgb(227, 227, 227);
+}
+.footer .footer__support__links__patreon__text a input {
+  font-weight: bold;
+  border-radius: 1rem;
+}
+.footer .footer__support__links__paypal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.footer .footer__support__links__paypal .iconPaypal {
+  color: #b3b3b3;
+  font-size: 2rem;
+}
+.footer .footer__support__links__paypal img {
+  display: none;
+}
+.footer .footer__support__links__paypal__text {
+  color: rgb(227, 227, 227);
+}
+.footer .footer__support__links__paypal form {
+  margin: 0.5rem 0rem;
+}
+.footer .footer__support__links__paypal .donateButton input {
+  border: none;
+  padding: 0rem;
+  margin: 0rem;
+  height: inherit;
+  max-width: 4rem;
+}
+
+.footer__contact {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.footer__contact a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.footer__contact p {
+  margin: 0.2rem 0rem;
+}
+.footer__contact__title {
+  margin-bottom: 0.5rem;
+}
+.footer__contact__email {
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.footer__contact__email .iconEnvelope {
+  margin-right: 0.5rem;
+}
+.footer__contact__twitter {
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.footer__contact__twitter .iconTwitter {
+  color: #b3b3b3;
+  margin-right: 0.5rem;
+}
+.footer__contact__github {
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.footer__contact__github .iconGithub {
+  color: #b3b3b3;
+  margin-right: 0.5rem;
+}
+
+.footer__blog {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.footer__blog a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.footer__blog p {
+  margin: 0.2rem 0rem;
+}
+.footer__blog__title {
+  margin-bottom: 0.5rem;
+}
+.footer__blog__wordpress {
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.footer__blog__wordpress .iconWordpress {
+  margin-right: 0.5rem;
+}
+
+.footer__credits {
+  margin: 1.5rem 0rem;
+}
+.footer__credits__twitch {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.footer__credits__twitch .iconTwitch {
+  color: #b3b3b3;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.footer__credits__twitch__IGDBIcon {
+  width: 3rem;
+}
+
+.commentsCounter {
+  display: flex;
+  align-items: baseline;
+  margin: 5px 0px;
+}
+
+.confirmationMessage {
+  color: green;
+  background-color: rgb(145, 231, 151);
+  margin: 10px 0px;
+  padding: 5px;
+}
+
+.errorMessage {
+  color: red;
+  margin: 10px 0px;
+}
+
+.loadMoreButton {
+  padding: 10px 10px;
+}
+.loadMoreButton__input {
+  padding: 10px;
+  height: 60px;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 10px 0px 20px;
+  background-color: #272735;
+  color: #ffffff;
+}
+
+.imageNotAvailable {
+  width: 100%;
+  height: 100%;
+  background-color: #272735;
+  border-radius: 0.5rem;
+  color: rgb(237, 235, 235);
+  font-size: xx-small;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.imageNotAvailable div {
+  text-align: center;
+}
+
+.avatarContainer {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+}
+.avatarContainer img {
+  border-radius: 3rem;
+}
+
+body {
+  background-color: rgb(227, 227, 227);
+  min-width: 320px;
+}
+body * {
+  box-sizing: border-box;
+}
+body a {
+  text-decoration: none;
+  text-decoration: underline;
+}
+body .resultsCounter {
+  color: gray;
+}
+body .mainContainer {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+body .headerContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+body .searchBarContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 4.1rem;
+}
+body .pageContentContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  min-height: 20rem;
+}
+body .pageContentContainer section {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  padding: 0rem 0.7rem;
+  border-radius: 5px;
+}
+body .sectionsContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+body .footerContainer {
+  background-color: #272735;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}/*# sourceMappingURL=App.css.map */

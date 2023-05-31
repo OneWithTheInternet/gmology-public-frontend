@@ -1,0 +1,9 @@
+@use '../abstracts/mixins';
+
+.loadMoreButton{
+    padding: 10px 10px;
+    
+    &__input {
+       @include mixins.basicInputButton;
+    }
+}

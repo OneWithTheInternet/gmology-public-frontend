@@ -1,0 +1,15 @@
+@use '../abstracts/mixins';
+
+.followers .followers__list {
+
+    & .userListCard {
+        @include mixins.listOfResources;
+    }
+}
+
+.following .following__list {
+
+    & .userListCard {
+        @include mixins.listOfResources;
+    }
+}

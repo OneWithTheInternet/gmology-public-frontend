@@ -1,0 +1,52 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+form * {
+    display: inline-block;
+    width: 100%; 
+    
+}
+
+form { 
+    & .form__fieldContainer {
+        position: relative;
+    }
+
+    & .form__optionsIcon {
+        position:absolute;
+        left: 85%;
+        top: 0.2rem;
+        bottom: 0px;
+        width: 50px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+    
+        & svg {
+            font-size: 24px;
+        }
+    }
+}
+
+form label {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+form input {
+    @include mixins.basicInputField;
+}
+
+form .form__button  {
+    @include mixins.basicInputButton;
+}
+
+form textarea  {
+    @include mixins.basicInputField;
+    height: 180px;
+}
+
+textarea {
+    resize: none;
+}

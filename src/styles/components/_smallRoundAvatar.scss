@@ -1,0 +1,12 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.avatarContainer {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+
+  & img {
+    border-radius: 3rem;
+  }
+}

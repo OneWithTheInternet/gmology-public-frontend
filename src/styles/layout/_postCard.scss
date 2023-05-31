@@ -1,0 +1,24 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.postCard {
+    background-color: variables.$bgColor1;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    
+    & .postText, .commentsCounter, .creationDate {
+        padding: 0px 10px;
+        @include mixins.postText;
+    }
+
+    & .userTag {
+        padding: 0px 10px; 
+    }
+
+    & .commentsCounter {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}

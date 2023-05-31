@@ -1,0 +1,9 @@
+@use '../abstracts/_mixins.scss';
+@use '../abstracts/variables';
+
+.createPost {
+    &__form label textarea {
+        height: variables.$textInputHeight--tall;
+    }
+}
+

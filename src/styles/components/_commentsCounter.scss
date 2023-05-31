@@ -1,0 +1,7 @@
+@use '../abstracts/variables';
+
+.commentsCounter {
+    display: flex;
+    align-items: baseline;
+    margin: variables.$lineMargins;
+}

@@ -1,0 +1,26 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.accountDeletion {
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.accountDeletion .accountDeletion__cancel {
+    @include mixins.basicInputButton;
+    margin-top: 1.5rem;
+    background-color: variables.$bgColor--dark;
+}
+
+.accountDeletion .accountDeletion__submit {
+    @include mixins.basicInputButton;
+    margin-top: 1.5rem;
+    background-color: variables.$errorColor--bright;
+    color: variables.$bgColor1;
+}
+
+.accountDeletion .accountDeletion__continue {
+    @include mixins.basicInputField;
+}
